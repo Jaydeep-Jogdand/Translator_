@@ -3,10 +3,7 @@
 #include <sstream>
 #include <iostream>
 
-Reader::Reader()
-{
-
-}
+Reader::Reader(){}
 void Reader::loadFile(const std::string& filePath) {
     std::ifstream file(filePath);
     std::string line;
@@ -23,7 +20,4 @@ void Reader::loadFile(const std::string& filePath) {
     }
     std::cout << "Loaded data: " << content << std::endl; // Debug print
 }
-Reader::~Reader()
-{
-
-}
+Reader::~Reader(){}
