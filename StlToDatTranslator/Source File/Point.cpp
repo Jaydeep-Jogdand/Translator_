@@ -1,8 +1,7 @@
 #include "Point.h"
-
-
 Point::Point(int x, int y, int z)
-    : xPos(x), yPos(y), zPos(z) {}  // Correct placement of the initialization list
+    : xPos(x), yPos(y), zPos(z) {}
+Point::~Point(){}
 int Point::getX()  const {
     return xPos;
 }
@@ -15,7 +14,4 @@ int Point::getY() const
 int Point::getZ()const{
     return zPos;
 }
-Point::~Point()
-{
 
-}

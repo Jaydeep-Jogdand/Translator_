@@ -3,10 +3,7 @@
 #include <sstream>
 #include <iostream>
 
-Triangulation::Triangulation()
-{
-
-}
+Triangulation::Triangulation(){}
 void Triangulation::parseData(const std::string& rawData) {
     std::istringstream dataStream(rawData);
     double coordValue;
@@ -42,7 +39,5 @@ std::vector<Triangle> Triangulation::generateTriangles(const std::string& rawDat
     return triangles;
 }
 Triangulation::~Triangulation()
-{
-
-}
+{}
 
