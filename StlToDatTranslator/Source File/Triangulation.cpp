@@ -41,3 +41,6 @@ std::vector<Triangle> Triangulation::generateTriangles(const std::string& rawDat
 Triangulation::~Triangulation()
 {}
 
+
+
+
