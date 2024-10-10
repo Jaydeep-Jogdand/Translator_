@@ -11,3 +11,6 @@ public:
     int getZ() const;
     ~Point();
 };
+
+
+
