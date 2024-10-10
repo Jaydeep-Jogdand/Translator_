@@ -20,3 +20,5 @@ void Writer::saveToFile(const std::string& filePath, const std::vector<Triangle>
 
 Writer::~Writer() {}
 
+
+
