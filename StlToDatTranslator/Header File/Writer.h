@@ -9,3 +9,6 @@ public:
     void saveToFile(const std::string& filePath, const std::vector<Triangle>& shapeTriangles);
     ~Writer();
 };
+
+
+

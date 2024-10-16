@@ -21,3 +21,6 @@ void Reader::loadFile(const std::string& filePath) {
   //  std::cout << "Loaded data: " << content << std::endl; // Debug print
 }
 Reader::~Reader(){}
+
+
+

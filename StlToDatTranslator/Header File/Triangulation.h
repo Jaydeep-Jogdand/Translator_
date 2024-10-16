@@ -13,3 +13,6 @@ public:
     std::vector<Triangle> generateTriangles(const std::string& rawData);
     ~Triangulation();
 };
+
+
+

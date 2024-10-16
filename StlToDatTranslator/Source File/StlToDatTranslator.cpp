@@ -18,3 +18,6 @@ int main() {
     std::cout << "Triangles successfully saved to output.dat\n";
     return 0;
 }
+
+
+
