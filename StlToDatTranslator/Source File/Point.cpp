@@ -15,3 +15,6 @@ int Point::getZ()const{
     return zPos;
 }
 
+
+
+
