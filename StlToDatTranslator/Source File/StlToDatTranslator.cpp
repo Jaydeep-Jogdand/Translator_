@@ -5,7 +5,7 @@
 
 int main() {
     Reader fileReader;
-    fileReader.loadFile("cube.stl");
+    fileReader.loadFile("TestCase/cube.stl");
 
     Triangulation triangulation;
     triangulation.parseData(fileReader.content);
