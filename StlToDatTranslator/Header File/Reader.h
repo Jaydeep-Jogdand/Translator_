@@ -1,13 +1,11 @@
 #pragma once
 #include <string>
+#include "Triangulation.h"
 
 class Reader {
 public:
-    std::string content;
-    void loadFile(const std::string& filePath);
-    Reader();
-    ~Reader();
+    Reader() {}
+    virtual ~Reader() {}
+
+    virtual void read(const std::string& inputFile, Triangulation& triangulation) = 0;
 };
-
-
-
