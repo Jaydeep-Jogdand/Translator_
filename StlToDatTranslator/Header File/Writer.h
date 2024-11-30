@@ -1,11 +1,10 @@
 #pragma once
 #include <vector>
 #include <string>
-#include "Triangle.h"
+#include "Triangulation.h"
 
 class Writer {
 public:
-    Writer();
-    void saveToFile(const std::string& filePath, const std::vector<Triangle>& shapeTriangles);
-    ~Writer();
+    virtual void write(const std::string& outputFile, const std::vector<Triangle>& triangles, const std::vector<double>& uniqueCoordinates) = 0;
+    virtual ~Writer() {}
 };

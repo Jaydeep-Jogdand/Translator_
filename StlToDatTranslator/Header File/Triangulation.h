@@ -1,15 +1,15 @@
 #pragma once
-#include <unordered_map>
+#include <map>
 #include <vector>
-#include <string>
 #include "Triangle.h"
 
 class Triangulation {
 public:
+    std::map<double, int> vertexToIndex;  // Map coordinates to their index
+    std::vector<double> uniqueCoordinates;          // List of unique coordinates
+    std::vector<Triangle> trianglesList;            // List of triangles
+
     Triangulation();
-    std::unordered_map<double, int> vertexToIndex;
-    std::vector<double> uniqueCoordinates;
-    void parseData(const std::string& rawData);
-    std::vector<Triangle> generateTriangles(const std::string& rawData);
+    void insertTriangles(const Triangle& triangle);
     ~Triangulation();
 };
